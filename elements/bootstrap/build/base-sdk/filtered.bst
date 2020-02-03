@@ -13,6 +13,10 @@ kind: filter
     depends:
     - filename: bootstrap/build/base-sdk/image-powerpc64le.bst
       type: build
+- bootstrap_build_arch == "arm":
+    depends:
+    - filename: bootstrap/build/base-sdk/image-arm.bst
+      type: build
 
 config:
   exclude:
